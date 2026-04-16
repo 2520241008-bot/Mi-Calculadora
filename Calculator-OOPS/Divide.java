@@ -1,11 +1,12 @@
 public class Divide implements Operate {
     @Override
-    public Double getResult(Double... numbers){
-        Double div = numbers[0];
-
-        for(int i=1;i< numbers.length;i++){
-            div /= numbers[i];
+    public Double getResult(Double... numbers) {
+        Double res = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            res /= numbers[i];
         }
-        return div;
+        // Modificación realizada por Nelson Guzman
+        System.out.println("División realizada por Nelson Guzman");
+        return res;
     }
 }
